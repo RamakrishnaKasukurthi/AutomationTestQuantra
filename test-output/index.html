@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestNG_testing" class="navigator-link">
+              <span class="suite-name border-failed">TestNG testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestNG_testing" class="navigator-link ">
+                    <span>C:\Users\91800\eclipse-workspace\QuantraTestAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestNG_testing" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestNG_testing" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestNG_testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestNG_testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestNG_testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestNG_testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG_testing" class="hide-methods failed suite-TestNG_testing"> (hide)</a> <!-- hide-methods failed suite-TestNG_testing -->
+                      <a href="#" panel-name="suite-TestNG_testing" class="show-methods failed suite-TestNG_testing"> (show)</a> <!-- show-methods failed suite-TestNG_testing -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNG_testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="verifyCourseCountTest">verifyCourseCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNG_testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNG_testing" class="hide-methods passed suite-TestNG_testing"> (hide)</a> <!-- hide-methods passed suite-TestNG_testing -->
+                      <a href="#" panel-name="suite-TestNG_testing" class="show-methods passed suite-TestNG_testing"> (show)</a> <!-- show-methods passed suite-TestNG_testing -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNG_testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="captureAmountPayableTest">captureAmountPayableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="captureBaseAmountTest">captureBaseAmountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="clickOnApplyCouponTest">clickOnApplyCouponTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="clickOnCloseCouponTest">clickOnCloseCouponTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.SentimentAnalysisTradingPageTest" class="method navigator-link" hash-for-method="clickOnEnrollNowtest">clickOnEnrollNowtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="clickOnLoginButtonTest">clickOnLoginButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="clickOnLogoutTest">clickOnLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="clickOnRemoveTest">clickOnRemoveTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="clickOnViewDetailsTest">clickOnViewDetailsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="selectOnSentimentAnalysisTrading">selectOnSentimentAnalysisTrading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.SentimentAnalysisTradingPageTest" class="method navigator-link" hash-for-method="verifyCourseNameTest">verifyCourseNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.CartPageTest" class="method navigator-link" hash-for-method="verifyErrorMessageTest">verifyErrorMessageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_testing" title="com.qa.testcases.SentimentAnalysisTradingPageTest" class="method navigator-link" hash-for-method="verifyPriceTest">verifyPriceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNG_testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_testing" class="panel TestNG_testing">
+          <div class="suite-TestNG_testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testcases.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCourseCountTest">
+                  </a> <!-- verifyCourseCountTest -->
+                  <span class="method-name">verifyCourseCountTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [5] but found [5]
+	at com.qa.pages.CartPage.verifyCourseCount(CartPage.java:63)
+	at com.qa.testcases.CartPageTest.verifyCourseCountTest(CartPageTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-failed -->
+          <div class="suite-TestNG_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectOnSentimentAnalysisTrading">
+                  </a> <!-- selectOnSentimentAnalysisTrading -->
+                  <span class="method-name">selectOnSentimentAnalysisTrading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-passed -->
+          <div class="suite-TestNG_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-passed -->
+          <div class="suite-TestNG_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.SentimentAnalysisTradingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnEnrollNowtest">
+                  </a> <!-- clickOnEnrollNowtest -->
+                  <span class="method-name">clickOnEnrollNowtest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCourseNameTest">
+                  </a> <!-- verifyCourseNameTest -->
+                  <span class="method-name">verifyCourseNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceTest">
+                  </a> <!-- verifyPriceTest -->
+                  <span class="method-name">verifyPriceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-passed -->
+          <div class="suite-TestNG_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureAmountPayableTest">
+                  </a> <!-- captureAmountPayableTest -->
+                  <span class="method-name">captureAmountPayableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureBaseAmountTest">
+                  </a> <!-- captureBaseAmountTest -->
+                  <span class="method-name">captureBaseAmountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnApplyCouponTest">
+                  </a> <!-- clickOnApplyCouponTest -->
+                  <span class="method-name">clickOnApplyCouponTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCloseCouponTest">
+                  </a> <!-- clickOnCloseCouponTest -->
+                  <span class="method-name">clickOnCloseCouponTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnLogoutTest">
+                  </a> <!-- clickOnLogoutTest -->
+                  <span class="method-name">clickOnLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnRemoveTest">
+                  </a> <!-- clickOnRemoveTest -->
+                  <span class="method-name">clickOnRemoveTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnViewDetailsTest">
+                  </a> <!-- clickOnViewDetailsTest -->
+                  <span class="method-name">clickOnViewDetailsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorMessageTest">
+                  </a> <!-- verifyErrorMessageTest -->
+                  <span class="method-name">verifyErrorMessageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-passed -->
+          <div class="suite-TestNG_testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnLoginButtonTest">
+                  </a> <!-- clickOnLoginButtonTest -->
+                  <span class="method-name">clickOnLoginButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_testing-class-passed -->
+        </div> <!-- panel TestNG_testing -->
+        <div panel-name="test-xml-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\91800\eclipse-workspace\QuantraTestAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestNG testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Rama&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testcases.DashboardPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testcases.SentimentAnalysisTradingPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testcases.CartPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Rama --&gt;
+&lt;/suite&gt; &lt;!-- TestNG testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Rama (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_testing');
+function tableData_TestNG_testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectOnSentimentAnalysisTrading')
+data.setCell(0, 2, 'com.qa.testcases.DashboardPageTest')
+data.setCell(0, 3, 3873);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickOnEnrollNowtest')
+data.setCell(1, 2, 'com.qa.testcases.SentimentAnalysisTradingPageTest')
+data.setCell(1, 3, 3469);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickOnLoginButtonTest')
+data.setCell(2, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(2, 3, 2308);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.qa.testcases.LoginPageTest')
+data.setCell(3, 3, 1200);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyErrorMessageTest')
+data.setCell(4, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(4, 3, 911);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCourseNameTest')
+data.setCell(5, 2, 'com.qa.testcases.SentimentAnalysisTradingPageTest')
+data.setCell(5, 3, 896);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyPriceTest')
+data.setCell(6, 2, 'com.qa.testcases.SentimentAnalysisTradingPageTest')
+data.setCell(6, 3, 795);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clickOnRemoveTest')
+data.setCell(7, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(7, 3, 652);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clickOnApplyCouponTest')
+data.setCell(8, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(8, 3, 642);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'clickOnCloseCouponTest')
+data.setCell(9, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(9, 3, 603);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clickOnViewDetailsTest')
+data.setCell(10, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(10, 3, 597);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'captureBaseAmountTest')
+data.setCell(11, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(11, 3, 577);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'captureAmountPayableTest')
+data.setCell(12, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(12, 3, 501);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'clickOnLogoutTest')
+data.setCell(13, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(13, 3, 456);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyCourseCountTest')
+data.setCell(14, 2, 'com.qa.testcases.CartPageTest')
+data.setCell(14, 3, 395);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyHomePageTitleTest')
+data.setCell(15, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(15, 3, 283);
+window.suiteTableData['TestNG_testing']= { tableData: data, tableDiv: 'times-div-TestNG_testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-TestNG_testing">
+              </div> <!-- times-div-TestNG_testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitleTest</span>
+                <span class="method-start">7607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7896 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnLoginButtonTest</span>
+                <span class="method-start">15184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17496 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">25433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26635 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectOnSentimentAnalysisTrading</span>
+                <span class="method-start">37171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41046 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.SentimentAnalysisTradingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCourseNameTest</span>
+                <span class="method-start">54697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55595 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceTest</span>
+                <span class="method-start">70028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">70825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">71962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnEnrollNowtest</span>
+                <span class="method-start">86946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90418 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testcases.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">91186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCourseCountTest</span>
+                <span class="method-start">108417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108817 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">109591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">captureBaseAmountTest</span>
+                <span class="method-start">125686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">126264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">127092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">captureAmountPayableTest</span>
+                <span class="method-start">144320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">144823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">145617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnViewDetailsTest</span>
+                <span class="method-start">163071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">164425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnRemoveTest</span>
+                <span class="method-start">182730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">183382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">184120 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnApplyCouponTest</span>
+                <span class="method-start">200958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">201603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">202425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorMessageTest</span>
+                <span class="method-start">220174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">221085 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">221891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnCloseCouponTest</span>
+                <span class="method-start">239333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">239937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">240733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnLogoutTest</span>
+                <span class="method-start">257274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">257731 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
